@@ -27,7 +27,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">INA236 HAL Based Library<span id="projectnumber">&#160;1.0.0</span>
+   <div id="projectname">INA236 HAL Based Library<span id="projectnumber">&#160;1.0.1</span>
    </div>
    <div id="projectbrief">This library is a software library that works with the INA236 current, voltage, and power monitor chip. This library provides a convenient and efficient way to access the I2C interfaces of the chip, allowing developers to easily integrate this power meter into their systems.</div>
   </td>
@@ -145,7 +145,7 @@ Quick Start</h2>
 <div class="ttc" id="aina236_8h_html_ac8baaa7d3332fac0cb58606c8abacdb6acfaa6a642034e5c48d5f172355a0e22d"><div class="ttname"><a href="ina236_8h.html#ac8baaa7d3332fac0cb58606c8abacdb6acfaa6a642034e5c48d5f172355a0e22d">CTIME_140us</a></div><div class="ttdeci">@ CTIME_140us</div><div class="ttdef"><b>Definition</b> ina236.h:68</div></div>
 <div class="ttc" id="aina236_8h_html_ae77acd2b9e0633c6769c2275fc8c71fca39711bc57d71a9e56b586578de4da136"><div class="ttname"><a href="ina236_8h.html#ae77acd2b9e0633c6769c2275fc8c71fca39711bc57d71a9e56b586578de4da136">RANGE_20_48mV</a></div><div class="ttdeci">@ RANGE_20_48mV</div><div class="ttdef"><b>Definition</b> ina236.h:66</div></div>
 <div class="ttc" id="aina236_8h_html_aeec3587067ff840117ceeb10b98eda58a3a1205ed5042c059ebf47784254d1f29"><div class="ttname"><a href="ina236_8h.html#aeec3587067ff840117ceeb10b98eda58a3a1205ed5042c059ebf47784254d1f29">NADC_16</a></div><div class="ttdeci">@ NADC_16</div><div class="ttdef"><b>Definition</b> ina236.h:67</div></div>
-</div><!-- fragment --> Each argument is described on the <a href="https://smotlaq.github.io/ina236/ina236_8c.html#a21acc30b187445a98f711a54b8678c7c">doc page</a>.</li>
+</div><!-- fragment --> Each argument is described on the <a href="https://smotlaq.github.io/ina236/ina236_8c.html#afac863dce34fc9ce66f222eb697ffa0d">doc page</a>.</li>
 <li>Now you can call <code>INA236_readAll</code> function to read the meassured data: <div class="fragment"><div class="line"><a class="code hl_function" href="ina236_8c.html#a9dc7910ffe49627955026e5d542e9e56">INA236_readAll</a>(&amp;ina236);</div>
 <div class="line">shunt_voltage = ina236.<a class="code hl_variable" href="structINA236.html#ac63c1ad335c16bcdb33b5e55cf773ad3">ShuntVoltage</a>;</div>
 <div class="line">bus_voltage = ina236.<a class="code hl_variable" href="structINA236.html#a4cf12f3449e646afc1f8cc93a5264589">BusVoltage</a>;</div>
@@ -226,9 +226,9 @@ Using Alert</h3>
 <div class="ttc" id="aina236_8h_html_a9524876614527f1c1cad905b5586a61ca8e18da66cd5b403de50cd5cea2867a01"><div class="ttname"><a href="ina236_8h.html#a9524876614527f1c1cad905b5586a61ca8e18da66cd5b403de50cd5cea2867a01">ALERT_TRANSPARENT</a></div><div class="ttdeci">@ ALERT_TRANSPARENT</div><div class="ttdef"><b>Definition</b> ina236.h:73</div></div>
 <div class="ttc" id="aina236_8h_html_ada37218468b40fbf8e3f7951165cf634ac517f2dbfd71d39c6277a02c6a8e98b5"><div class="ttname"><a href="ina236_8h.html#ada37218468b40fbf8e3f7951165cf634ac517f2dbfd71d39c6277a02c6a8e98b5">ALERT_ACTIVE_LOW</a></div><div class="ttdeci">@ ALERT_ACTIVE_LOW</div><div class="ttdef"><b>Definition</b> ina236.h:72</div></div>
 <div class="ttc" id="aina236_8h_html_af9b60a033119bbb624f6578c3dc1b6e4a083db3ebfb856b3fb387dd31d856c0c8"><div class="ttname"><a href="ina236_8h.html#af9b60a033119bbb624f6578c3dc1b6e4a083db3ebfb856b3fb387dd31d856c0c8">ALERT_CONV_DISABLE</a></div><div class="ttdeci">@ ALERT_CONV_DISABLE</div><div class="ttdef"><b>Definition</b> ina236.h:74</div></div>
-</div><!-- fragment --><p> Each argument is described on the <a href="https://smotlaq.github.io/ina236/ina236_8c.html#afb44437883ad8f8d08aaf695815da7ed">doc page</a>.</p>
-<p>** <em>NOTE1</em> ** If you choose <code>ALERT_LATCHED</code> for alert latch mode, you have to reset the alert pin by calling <code>INA236_resetAlert</code> function after each alert assertion. (<a href="https://smotlaq.github.io/ina236/ina236_8c.html#a5810f9a740226a39ba5cc2afa6b64f77">see more</a>)</p>
-<p>** <em>NOTE2</em> ** If you enabled convertion ready alert as well as limit reach functions (like shunt over voltage etc), you have to distinguish the alert source bt calling <code>INA236_getAlertSource</code> function. (<a href="https://smotlaq.github.io/ina236/ina236_8c.html#a52cc3b785dea1f5af6f0803f02fcefdb">see more</a>)</p>
+</div><!-- fragment --><p> Each argument is described on the <a href="https://smotlaq.github.io/ina236/ina236_8c.html#a6da58328ac79c68a8471940fbeacacde">doc page</a>.</p>
+<p>** <em>NOTE1</em> ** If you choose <code>ALERT_LATCHED</code> for alert latch mode, you have to reset the alert pin by calling <code>INA236_resetAlert</code> function after each alert assertion. (<a href="https://smotlaq.github.io/ina236/ina236_8c.html#a37f4e9a052a8f8b6e85619372ec627db">see more</a>)</p>
+<p>** <em>NOTE2</em> ** If you enabled convertion ready alert as well as limit reach functions (like shunt over voltage etc), you have to distinguish the alert source bt calling <code>INA236_getAlertSource</code> function. (<a href="https://smotlaq.github.io/ina236/ina236_8c.html#a72a83e615d43b675c1a53d1e8572475a">see more</a>)</p>
 <p>** <em>NOTE3</em> ** The alert pin is open-drain. So don not forget to add a pull-up resistor on this pin.</p>
 <h3><a class="anchor" id="autotoc_md9"></a>
 Read Parameters Individually</h3>
@@ -256,21 +256,21 @@ Read Parameters Individually</h3>
 <div class="ttc" id="aina236_8c_html_ad630972b0b5f73f544b0fa9dc491b83a"><div class="ttname"><a href="ina236_8c.html#ad630972b0b5f73f544b0fa9dc491b83a">INA236_getShuntVoltage</a></div><div class="ttdeci">float INA236_getShuntVoltage(INA236 *self)</div><div class="ttdoc">Read the shunt voltage from INA236.</div><div class="ttdef"><b>Definition</b> ina236.c:575</div></div>
 </div><!-- fragment --><h3><a class="anchor" id="autotoc_md10"></a>
 Soft Reset</h3>
-<p>You can send a reset command to all of the <a class="el" href="structINA236.html" title="Class (struct) that stores variables for interacting with INA236.">INA236</a> chips on the same bus by calling <code>INA236_SoftResetAll</code> function. (<a href="https://smotlaq.github.io/ina236/ina236_8c.html#af3d939ea27371b17fd265f19957234b2">see more</a>)</p>
+<p>You can send a reset command to all of the <a class="el" href="structINA236.html" title="Class (struct) that stores variables for interacting with INA236.">INA236</a> chips on the same bus by calling <code>INA236_SoftResetAll</code> function. (<a href="https://smotlaq.github.io/ina236/ina236_8c.html#aa4ba955e3e7793601ba52b28a2c67443">see more</a>)</p>
 <h3><a class="anchor" id="autotoc_md11"></a>
 Change Settings On The Fly</h3>
 <p>You can change each of the configurations on the fly using these functions:</p><ul>
-<li><code>INA236_setADCRange</code> to change the ADC full scale range (<a href="https://smotlaq.github.io/ina236/ina236_8c.html#aba71c63deed65a0abdbf7269b5f382d8">see more</a>)</li>
-<li><code>INA236_setNumberOfADCSamples</code> to change the number of averaging ADC samples (<a href="https://smotlaq.github.io/ina236/ina236_8c.html#a84ff6173bf6cfa44348ba259a503c804">see more</a>)</li>
-<li><code>INA236_setVBusConversionTime</code> to change the conversion period of VBus (<a href="https://smotlaq.github.io/ina236/ina236_8c.html#a94ec7dc7cd10748c4ed822266174d0ff">see more</a>)</li>
-<li><code>INA236_setVShuntConversionTime</code> to change the conversion period of VBus (<a href="https://smotlaq.github.io/ina236/ina236_8c.html#ad19627414a2465c9cf1fac54f54eaa39">see more</a>)</li>
-<li><code>INA236_setMode</code> to change the operating mode (<a href="https://smotlaq.github.io/ina236/ina236_8c.html#ac85c8e736ffae6d248971091b374d00f">see more</a>)</li>
+<li><code>INA236_setADCRange</code> to change the ADC full scale range (<a href="https://smotlaq.github.io/ina236/ina236_8c.html#a54228dec1296b2b38dd6eee21f147503">see more</a>)</li>
+<li><code>INA236_setNumberOfADCSamples</code> to change the number of averaging ADC samples (<a href="https://smotlaq.github.io/ina236/ina236_8c.html#a6be904fbbeffed1725841018138a7cdd">see more</a>)</li>
+<li><code>INA236_setVBusConversionTime</code> to change the conversion period of VBus (<a href="https://smotlaq.github.io/ina236/ina236_8c.html#abe15ca640e6d27e9945e50e0c3d60b8a">see more</a>)</li>
+<li><code>INA236_setVShuntConversionTime</code> to change the conversion period of VBus (<a href="https://smotlaq.github.io/ina236/ina236_8c.html#acd99e0c1c70ae96ffc4276297d70b952">see more</a>)</li>
+<li><code>INA236_setMode</code> to change the operating mode (<a href="https://smotlaq.github.io/ina236/ina236_8c.html#a9a2673191922b6b2e22c56bebcdb58d6">see more</a>)</li>
 </ul>
 <h3><a class="anchor" id="autotoc_md12"></a>
 Getting Manufacturer and Device ID</h3>
 <p>If you want to get the manufacturer or device ID, you can use these functions:</p><ul>
-<li><code>INA236_getManID</code> (<a href="https://smotlaq.github.io/ina236/ina236_8c.html#ae646f51adec51af1aa6377c3dffeeb6a">see more</a>)</li>
-<li><code>INA236_getDevID</code> (<a href="https://smotlaq.github.io/ina236/ina236_8c.html#a88ff1503798836270a41d3b9f3913ca7">see more</a>)</li>
+<li><code>INA236_getManID</code> (<a href="https://smotlaq.github.io/ina236/ina236_8c.html#a76087166e06d502fff4fcc50b60192b0">see more</a>)</li>
+<li><code>INA236_getDevID</code> (<a href="https://smotlaq.github.io/ina236/ina236_8c.html#a1d07bedaf1f7ae7acfce73bd49f5ac85">see more</a>)</li>
 </ul>
 <p>For example: </p><div class="fragment"><div class="line">printf(<span class="stringliteral">&quot;Manufacturer ID is 0x%4X \r\n&quot;</span>, <a class="code hl_function" href="ina236_8c.html#a76087166e06d502fff4fcc50b60192b0">INA236_getManID</a>(&amp;ina236));</div>
 <div class="line">printf(<span class="stringliteral">&quot;      Device ID is 0x%3X \r\n&quot;</span>, <a class="code hl_function" href="ina236_8c.html#a1d07bedaf1f7ae7acfce73bd49f5ac85">INA236_getDevID</a>(&amp;ina236));</div>
@@ -278,7 +278,7 @@ Getting Manufacturer and Device ID</h3>
 <div class="ttc" id="aina236_8c_html_a76087166e06d502fff4fcc50b60192b0"><div class="ttname"><a href="ina236_8c.html#a76087166e06d502fff4fcc50b60192b0">INA236_getManID</a></div><div class="ttdeci">uint16_t INA236_getManID(INA236 *self)</div><div class="ttdoc">Get the manufacturer ID.</div><div class="ttdef"><b>Definition</b> ina236.c:516</div></div>
 </div><!-- fragment --><h3><a class="anchor" id="autotoc_md13"></a>
 Get Internal Errors</h3>
-<p><a class="el" href="structINA236.html" title="Class (struct) that stores variables for interacting with INA236.">INA236</a> can also give the state of internal modules like CPU and memory. By calling <code>INA236_getErrors</code> function you can see if there is any error or not. (<a href="https://smotlaq.github.io/ina236/ina236_8c.html#a14a3383eba06ce784ed526585a0cef9a">see more</a>) </p>
+<p><a class="el" href="structINA236.html" title="Class (struct) that stores variables for interacting with INA236.">INA236</a> can also give the state of internal modules like CPU and memory. By calling <code>INA236_getErrors</code> function you can see if there is any error or not. (<a href="https://smotlaq.github.io/ina236/ina236_8c.html#afb2d6eb60b3498ab85ac3784413be133">see more</a>) </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
