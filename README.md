@@ -61,7 +61,7 @@ Is it helpfull?
    ```C
    INA236_init(&ina236, 0x48, &hi2c1, 1, RANGE_20_48mV, NADC_16, CTIME_1100us, CTIME_140us, MODE_CONTINUOUS_BOTH_SHUNT_BUS);
    ```
-   Each argument is described on the [doc page](https://smotlaq.github.io/ina236/ina236_8c.html#a21acc30b187445a98f711a54b8678c7c).
+   Each argument is described on the [doc page](https://smotlaq.github.io/ina236/ina236_8c.html#afac863dce34fc9ce66f222eb697ffa0d).
 
 6. Now you can call `INA236_readAll` function to read the meassured data:
    ```C
@@ -151,11 +151,11 @@ INA236 can assert an alert on several situations like convertion ready, over pow
 ```C
 INA236_alert_init(&ina236, ALERT_SHUNT_OVER_LIMIT, ALERT_ACTIVE_LOW, ALERT_TRANSPARENT, ALERT_CONV_DISABLE, 2.5)
 ```
-Each argument is described on the [doc page](https://smotlaq.github.io/ina236/ina236_8c.html#afb44437883ad8f8d08aaf695815da7ed).
+Each argument is described on the [doc page](https://smotlaq.github.io/ina236/ina236_8c.html#a6da58328ac79c68a8471940fbeacacde).
 
-** *NOTE1* **  If you choose `ALERT_LATCHED` for alert latch mode, you have to reset the alert pin by calling `INA236_resetAlert` function after each alert assertion. ([see more](https://smotlaq.github.io/ina236/ina236_8c.html#a5810f9a740226a39ba5cc2afa6b64f77))
+** *NOTE1* **  If you choose `ALERT_LATCHED` for alert latch mode, you have to reset the alert pin by calling `INA236_resetAlert` function after each alert assertion. ([see more](https://smotlaq.github.io/ina236/ina236_8c.html#a37f4e9a052a8f8b6e85619372ec627db))
 
-** *NOTE2* **  If you enabled convertion ready alert as well as limit reach functions (like shunt over voltage etc), you have to distinguish the alert source bt calling `INA236_getAlertSource` function. ([see more](https://smotlaq.github.io/ina236/ina236_8c.html#a52cc3b785dea1f5af6f0803f02fcefdb))
+** *NOTE2* **  If you enabled convertion ready alert as well as limit reach functions (like shunt over voltage etc), you have to distinguish the alert source bt calling `INA236_getAlertSource` function. ([see more](https://smotlaq.github.io/ina236/ina236_8c.html#a72a83e615d43b675c1a53d1e8572475a))
 
 ** *NOTE3* **  The alert pin is open-drain. So don not forget to add a pull-up resistor on this pin.
 
@@ -185,22 +185,22 @@ if(STATUS_OK == INA236_init(&ina236, 0x48, &hi2c1, 1, RANGE_20_48mV, NADC_16, CT
 
 ### Soft Reset
 
-You can send a reset command to all of the INA236 chips on the same bus by calling `INA236_SoftResetAll` function. ([see more](https://smotlaq.github.io/ina236/ina236_8c.html#af3d939ea27371b17fd265f19957234b2))
+You can send a reset command to all of the INA236 chips on the same bus by calling `INA236_SoftResetAll` function. ([see more](https://smotlaq.github.io/ina236/ina236_8c.html#aa4ba955e3e7793601ba52b28a2c67443))
 
 ### Change Settings On The Fly
 
 You can change each of the configurations on the fly using these functions:
-* `INA236_setADCRange` to change the ADC full scale range ([see more](https://smotlaq.github.io/ina236/ina236_8c.html#aba71c63deed65a0abdbf7269b5f382d8))
-* `INA236_setNumberOfADCSamples` to change the number of averaging ADC samples ([see more](https://smotlaq.github.io/ina236/ina236_8c.html#a84ff6173bf6cfa44348ba259a503c804))
-* `INA236_setVBusConversionTime` to change the conversion period of VBus ([see more](https://smotlaq.github.io/ina236/ina236_8c.html#a94ec7dc7cd10748c4ed822266174d0ff))
-* `INA236_setVShuntConversionTime` to change the conversion period of VBus ([see more](https://smotlaq.github.io/ina236/ina236_8c.html#ad19627414a2465c9cf1fac54f54eaa39))
-* `INA236_setMode` to change the operating mode ([see more](https://smotlaq.github.io/ina236/ina236_8c.html#ac85c8e736ffae6d248971091b374d00f))
+* `INA236_setADCRange` to change the ADC full scale range ([see more](https://smotlaq.github.io/ina236/ina236_8c.html#a54228dec1296b2b38dd6eee21f147503))
+* `INA236_setNumberOfADCSamples` to change the number of averaging ADC samples ([see more](https://smotlaq.github.io/ina236/ina236_8c.html#a6be904fbbeffed1725841018138a7cdd))
+* `INA236_setVBusConversionTime` to change the conversion period of VBus ([see more](https://smotlaq.github.io/ina236/ina236_8c.html#abe15ca640e6d27e9945e50e0c3d60b8a))
+* `INA236_setVShuntConversionTime` to change the conversion period of VBus ([see more](https://smotlaq.github.io/ina236/ina236_8c.html#acd99e0c1c70ae96ffc4276297d70b952))
+* `INA236_setMode` to change the operating mode ([see more](https://smotlaq.github.io/ina236/ina236_8c.html#a9a2673191922b6b2e22c56bebcdb58d6))
 
 ### Getting Manufacturer and Device ID
 
 If you want to get the manufacturer or device ID, you can use these functions:
-* `INA236_getManID` ([see more](https://smotlaq.github.io/ina236/ina236_8c.html#ae646f51adec51af1aa6377c3dffeeb6a))
-* `INA236_getDevID` ([see more](https://smotlaq.github.io/ina236/ina236_8c.html#a88ff1503798836270a41d3b9f3913ca7))
+* `INA236_getManID` ([see more](https://smotlaq.github.io/ina236/ina236_8c.html#a76087166e06d502fff4fcc50b60192b0))
+* `INA236_getDevID` ([see more](https://smotlaq.github.io/ina236/ina236_8c.html#a1d07bedaf1f7ae7acfce73bd49f5ac85))
 
 For example:
 ```C
@@ -210,4 +210,4 @@ printf("      Device ID is 0x%3X \r\n", INA236_getDevID(&ina236));
 
 ### Get Internal Errors
 
-INA236 can also give the state of internal modules like CPU and memory. By calling `INA236_getErrors` function you can see if there is any error or not. ([see more](https://smotlaq.github.io/ina236/ina236_8c.html#a14a3383eba06ce784ed526585a0cef9a))
+INA236 can also give the state of internal modules like CPU and memory. By calling `INA236_getErrors` function you can see if there is any error or not. ([see more](https://smotlaq.github.io/ina236/ina236_8c.html#afb2d6eb60b3498ab85ac3784413be133))
