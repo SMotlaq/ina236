@@ -30,6 +30,10 @@ The full documents are available [here](https://smotlaq.github.io/ina236/)
 
 Footprint and schematic symbols are available in [my Altium library](https://github.com/SMotlaq/altium-library).
 
+<p align="center">
+  <img src="https://github.com/SMotlaq/ina236/blob/images/images/symbols.png"/>
+</p>
+
 ## Donate
 Is it helpfull?
 
