@@ -1,10 +1,10 @@
-[![Doxygen Action](https://github.com/SMotlaq/ina234/actions/workflows/main2.yml/badge.svg)](https://github.com/SMotlaq/ina234/actions/workflows/main2.yml)
-[![pages-build-deployment](https://github.com/SMotlaq/ina234/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/SMotlaq/ina234/actions/workflows/pages/pages-build-deployment)
+[![Doxygen Action](https://github.com/SMotlaq/ina236/actions/workflows/main2.yml/badge.svg)](https://github.com/SMotlaq/ina236/actions/workflows/main2.yml)
+[![pages-build-deployment](https://github.com/SMotlaq/ina236/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/SMotlaq/ina236/actions/workflows/pages/pages-build-deployment)
 
 
 # INA234 HAL Based Library
 
-The INA234 device is a 12-bit digital current monitor with an I2C/SMBus-compatible interface that is compliant with a wide range of digital bus voltages such as 1.2 V, 1.8 V, 3.3 V, and 5.0 V. The device monitors the voltage across an external sense resistor and reports values for current, bus voltage, and power. ([Click for more info](https://www.ti.com/product/INA234))
+The INA234 device is a 12-bit digital current monitor with an I2C/SMBus-compatible interface that is compliant with a wide range of digital bus voltages such as 1.2 V, 1.8 V, 3.3 V, and 5.0 V. The device monitors the voltage across an external sense resistor and reports values for current, bus voltage, and power. ([Click for more info](https://www.ti.com/product/INA236))
 
 This library is a software library that works with the INA234 current, voltage, and power monitor chip. This library provides a convenient and efficient way to access the I2C interfaces of the chip, allowing developers to easily integrate this power meter into their systems.
 
@@ -13,7 +13,7 @@ The library is designed to be easy to use and provides a simple, intuitive API f
 With this library, developers can quickly and easily integrate the INA234 into their systems, enabling them to take full advantage of the chip's capabilities.
 
 <p align="center">
-  <img src="https://github.com/SMotlaq/ina234/blob/images/images/all.png"/>
+  <img src="https://github.com/SMotlaq/ina236/blob/images/images/all.png"/>
 </p>
 
 ## Key Features
